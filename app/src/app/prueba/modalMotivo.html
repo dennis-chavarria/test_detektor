@@ -1,0 +1,27 @@
+<div>
+    <div class="flex-row">
+        <p>{{titulo}}</p>
+    </div>
+    <div class="flex-column">
+        <mat-form-field>
+                <input matInput type="number" [(ngModel)]="motivo.motivo" placeholder='Motivo' />
+        </mat-form-field>
+        <mat-form-field>
+                <input matInput type="text" [(ngModel)]="motivo.des_motivo" placeholder='Descripcion' />
+        </mat-form-field>
+        <mat-form-field>
+                <input matInput type="text" [(ngModel)]="motivo.estado" placeholder='Estado' />
+        </mat-form-field>
+        <mat-form-field>
+                <input matInput type="text" [(ngModel)]="motivo.tipo" placeholder='Tipo' />
+        </mat-form-field>
+    </div>
+</div>
+<div class="flex-row">
+          <button mat-button color="warn" (click)="guardar()" [disabled]="!validar()">
+            Aceptar
+          </button>
+          <button mat-button color="primary" (click)="cerrar()">
+            Cancelar
+          </button>
+</div>
