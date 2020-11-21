@@ -8,7 +8,7 @@ import { map, catchError } from 'rxjs/operators';
 })
 
 export class MotivosService{
-    url:String='http://localhost/DennisChavarria/api/request';
+    url:String='http://localhost/test_detektor/api/request';
     constructor(private http : HttpClient){
       }
 
@@ -28,7 +28,7 @@ export class MotivosService{
        return res;
        })
        )
- 
+
      }
 
      guardarMotivo (_motivo:any) {
@@ -37,7 +37,7 @@ export class MotivosService{
        return res;
        })
        )
- 
+
      }
 
      eliminarMotivo (_motivo:any) {
@@ -46,7 +46,7 @@ export class MotivosService{
        return res;
        })
        )
- 
+
      }
-    
+
 }
